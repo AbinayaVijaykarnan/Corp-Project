@@ -252,7 +252,7 @@ body{
         padding:0;
     }
     .cover{
-        margin-top: -4px;
+        margin-top:-4px;
     }
     .cover-content{
         width:60%;
@@ -284,6 +284,7 @@ body{
         margin:0 auto;
     }
     .whyCorp{
+        border-bottom:1px solid rgb(255, 255, 255);
         width:90%;
        padding:20px;
     }
@@ -292,10 +293,11 @@ body{
     }
     .about{
         width:100%;
-        float: none;
+        float:none;
     }
     .plans{
         width:90%;
+        border-top:1px solid rgb(255, 255, 255);
     }
     .plan1,.plan2{
         width:100%;
@@ -306,6 +308,93 @@ body{
     }
     .teams{
         width:100%;
+        border-top:1px solid rgb(255, 255, 255);
+        text-align: justify;
     }
+    .footer{
+        border-top:1px solid rgb(255, 255, 255);
+    }
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width:420px)and (min-width:200px){
+    .logo h1{
+        float:none;
+        width:100%;
+    }
+    .links{
+        float:none;
+        width:100%;
+        padding:10px 0;
+        margin: 25px 0;
+    }
+    .cover{
+        margin-top: 0;
+    }
+    .cover-content{
+        width: 100%;
+        float: none;
+        position:relative; /*important- to move .cover-content below we used this*/
+        top:350px;
+    }
+    .cover-content button{
+        margin:10px 0;
+    }
+    .cover-image{
+        width:90%;
+        height:350px;
+        float: none;
+        margin:0 auto;
+        position:relative; /*important- to move .cover-image above the .cover-content we used this*/
+        top:-400px;
+    }
+    .cover-image img{
+        width:100%;
+        height:100%;
+    }
+    .sec1,.sec2,.sec3{
+        width:100%;
+        padding:20px;
+    }
+    .sec1 button,.sec2 button,.sec3 button{
+        margin:20px 30%;
+    }
+    .whyCorp{
+        border-bottom:1px solid rgb(255, 255, 255);
+        width:100%;
+        float:none;
+    }
+    .about .div1,.about .div2{
+        width:90%;
+        padding:0 40px;
+    }
+    .div1 h3,.div2 h3{
+        font-size:1.2rem;
+        padding:10px;
+    }
+    .plans{
+        width:100%;
+        border-top:1px solid rgb(255, 255, 255);
+    }
+    .plan1,.plan2{
+        width:90%;
+    }
+    .teams{
+        border-top:1px solid rgb(255, 255, 255);
+        padding:15px;
+    }
+    .teams img{
+        width:20%;
+        margin:15px;
+    }
+    .teams p{
+        width:70%;
+        font-size:0.8rem;
+    }
+    .footer{
+        border-top:1px solid rgb(255, 255, 255);
+    }
+    
+
 
 }
