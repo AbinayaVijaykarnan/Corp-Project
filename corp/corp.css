@@ -341,12 +341,12 @@ body{
         margin:10px 0;
     }
     .cover-image{
-        width:90%;
-        height:350px;
+        width:60%;
+        height:400px;
         float: none;
         margin:0 auto;
         position:relative; /*important- to move .cover-image above the .cover-content we used this*/
-        top:-400px;
+        top:-420px;
     }
     .cover-image img{
         width:100%;
